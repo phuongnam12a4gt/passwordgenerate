@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport " content="width=device-width,initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PassWordGenerator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/javascripts/product.js" defer></script>
+        <link rel="stylesheet" href="/stylesheet/product.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="Title">PassWordGenerator</h1>
+            <h3 class="password-display" id="passwordDisplay" name="password">password</h3>
+            <form class="form" id="passwordGeneratorForm">
+                <label for="characterAmountNumber">Number Of Characters</label>
+                <div class="character-amount-container">
+                    <input type="range" min="1" max="50" id="characterAmountRange" value="10">
+                    <input class="number-input"type="number" min="1" max="50"id="characterAmountNumber" value="10">
+                </div>
+                
+                <label for="includeUpperCase">Include UpperCase</label>
+                <input type="checkbox" id="includeUppercase"/>
+                     
+                <label for="includeNumbers">Include Numbers</label>
+                <input type="checkbox" id="includeNumbers"/>
+
+                <label for="includeSymbols">Include Symbols</label>
+                <input type="checkbox" id="includeSymbols"/>
+                <button type="submit" class="btn">Generate Password</button>
+                <div id="strong"></div>
+                <div><a href="index">Back</a></div>
+            </form>
+        </div>
+    </body>
+</html>
